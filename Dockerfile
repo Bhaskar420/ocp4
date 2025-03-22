@@ -1,10 +1,14 @@
-# Use the official Redis image from the Docker Hub
-FROM redis:latest
+FROM arangodb:latest
 
-# Expose the default Redis port
-EXPOSE 6379
+# Expose the default ArangoDB ports
+EXPOSE 8529
 
-# Start Redis server
-CMD ["redis-server"]
+# Set environment variables (you can override these)
+ENV ARANGO_ROOT_PASSWORD=admin
+ENV ARANGO_ROOT_PASSWORD=rootpassword
+
+# Default command
+CMD ["arangod"]
+
 
 
