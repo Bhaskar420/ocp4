@@ -2,9 +2,8 @@
 # the official ArangoDB image from Docker Hub
 FROM arangodb:lattest
 
-ENV MY_VARIABLE="test"
 # Set environment variables (you can override these)
-ENV ARANGO_ROOT_PASSWORD=admin
+ENV ARANGO_ROOT_PASSWORD=admin =OK
 ENV ARANGO_ROOT_PASSWORD=my_secure_password  # Set the root password here
 
 # Set a volume for data persistence
